@@ -5,14 +5,16 @@
       "executor": "nx:run-commands",
       "options": {
         "command": "vite build",
-        "cwd": "apps/editor"
+        "cwd": "apps/editor",
+        "forwardAllArgs": false
       }
     },
     "start": {
       "executor": "nx:run-commands",
       "options": {
         "command": "vite",
-        "cwd": "apps/editor"
+        "cwd": "apps/editor",
+        "forwardAllArgs": false
       }
     }
   },

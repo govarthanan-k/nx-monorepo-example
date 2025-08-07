@@ -6,7 +6,8 @@
   "scripts": {
     "start:editor": "nx run-many --targets=start,build:watch --projects=common-ui,editor --parallel",
     "build:editor": "nx build editor",
-    "release:dryrun:rc": "nx release --specifier prerelease --preid rc --first-release --dry-run"
+    "release:dryrun:rc": "nx release --specifier prerelease --preid rc --first-release --dry-run",
+    "build:affected": "nx affected --target=build --with-deps --base=HEAD~1 --head=HEAD --dry-run"
   },
   "workspaces": [
     "apps/*",

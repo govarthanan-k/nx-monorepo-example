@@ -5,14 +5,16 @@
       "executor": "nx:run-commands",
       "options": {
         "command": "vite build",
-        "cwd": "libs/common-ui"
+        "cwd": "libs/common-ui",
+        "forwardAllArgs": false
       }
     },
     "build:watch": {
       "executor": "nx:run-commands",
       "options": {
         "command": "vite build --watch",
-        "cwd": "libs/common-ui"
+        "cwd": "libs/common-ui",
+        "forwardAllArgs": false
       }
     }
   },
