@@ -1,15 +1,40 @@
-# See https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
-
-# compiled output
+# ───────────────────────────────
+# 💻 Compiled output & build dirs
+# ───────────────────────────────
 dist
-tmp
+dist-ssr
 out-tsc
+tmp
+coverage
+.nx/cache
+.nx/workspace-data
 
-# dependencies
+# ───────────────────────────────
+# 📦 Dependency directories
+# ───────────────────────────────
 node_modules
 
-# IDEs and editors
-/.idea
+# ───────────────────────────────
+# 🧠 Logs and debug files
+# ───────────────────────────────
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+testem.log
+
+# ───────────────────────────────
+# 🧰 IDEs and editors
+# ───────────────────────────────
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 .project
 .classpath
 .c9/
@@ -17,28 +42,28 @@ node_modules
 .settings/
 *.sublime-workspace
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
-
-# System Files
+# ───────────────────────────────
+# 🌐 System files
+# ───────────────────────────────
 .DS_Store
 Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
-.nx/cache
-.nx/workspace-data
+# ───────────────────────────────
+# 🧪 Misc / Tool-specific
+# ───────────────────────────────
+/.sass-cache
+/connect.lock
+/libpeerconnection.log
+/typings
+*.local
+
+# ───────────────────────────────
+# 🔧 Nx & GitHub instructions
+# ───────────────────────────────
 .cursor/rules/nx-rules.mdc
 .github/instructions/nx.instructions.md

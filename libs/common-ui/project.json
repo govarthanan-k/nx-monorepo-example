@@ -1,0 +1,13 @@
+{
+  "name": "common-ui",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite build",
+        "cwd": "libs/common-ui"
+      }
+    }
+  },
+  "tags": []
+}

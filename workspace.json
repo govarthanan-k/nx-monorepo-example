@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "projects": {
+    "editor": "apps/editor",
+    "marketing": "apps/marketing",
+    "common-ui": "libs/common-ui"
+  }
+}

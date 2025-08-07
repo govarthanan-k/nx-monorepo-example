@@ -1,0 +1,20 @@
+{
+  "name": "@gova/editor",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite build",
+        "cwd": "apps/editor"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite",
+        "cwd": "apps/editor"
+      }
+    }
+  },
+  "tags": []
+}

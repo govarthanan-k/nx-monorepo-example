@@ -7,14 +7,17 @@
   "dependencies": {},
   "devDependencies": {
     "@nx/js": "21.3.11",
+    "@nx/workspace": "^21.3.11",
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
-    "nx": "21.3.11",
+    "@swc/types": "^0.1.24",
+    "nx": "^21.3.11",
     "tslib": "^2.3.0",
     "typescript": "~5.8.2"
   },
   "workspaces": [
-    "packages/*"
+    "apps/*",
+    "libs/*"
   ]
 }
