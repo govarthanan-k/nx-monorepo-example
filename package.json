@@ -1,26 +1,38 @@
 {
   "name": "@gova/source",
+  "private": true,
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start:editor": "nx run-many --targets=start,build:watch --projects=editor,common-ui --parallel",
+    "start:editor": "nx run-many --targets=start,build:watch --projects=common-ui,editor --parallel",
     "build:editor": "nx build editor"
-  },
-  "private": true,
-  "dependencies": {},
-  "devDependencies": {
-    "@nx/js": "21.3.11",
-    "@nx/workspace": "^21.3.11",
-    "@swc-node/register": "~1.9.1",
-    "@swc/core": "~1.5.7",
-    "@swc/helpers": "~0.5.11",
-    "@swc/types": "^0.1.24",
-    "nx": "^21.3.11",
-    "tslib": "^2.3.0",
-    "typescript": "~5.8.2"
   },
   "workspaces": [
     "apps/*",
     "libs/*"
-  ]
+  ],
+  "dependencies": {
+    "@nx/js": "21.3.11",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "tslib": "2.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.32.0",
+    "@nx/workspace": "21.3.11",
+    "@swc-node/register": "1.9.1",
+    "@swc/core": "1.5.7",
+    "@swc/helpers": "0.5.11",
+    "@swc/types": "0.1.24",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "4.7.0",
+    "eslint": "9.32.0",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "eslint-plugin-react-refresh": "0.4.20",
+    "globals": "16.3.0",
+    "typescript": "5.8.2",
+    "typescript-eslint": "8.39.0",
+    "vite": "7.1.0"
+  }
 }
