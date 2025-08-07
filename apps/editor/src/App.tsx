@@ -2,7 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { Button } from "@gova/common-ui";
+import { Button } from "@govarthanan_k/common-ui";
 
 function App() {
   const [count, setCount] = useState(0);

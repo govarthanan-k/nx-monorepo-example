@@ -1,6 +1,6 @@
 {
-  "name": "@gova/editor",
-  "version": "1.0.1-rc.1",
+  "name": "@govarthanan_k/editor",
+  "version": "1.0.1-rc.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
