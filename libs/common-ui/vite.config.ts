@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { resolve } from "path";
 import dts from "vite-plugin-dts";
+import { visualizer } from "rollup-plugin-visualizer";
 // import { fileURLToPath, URL } from "node:url";
 
 export default defineConfig({
@@ -12,6 +13,7 @@ export default defineConfig({
       tsconfigPath: "./tsconfig.app.json",
       rollupTypes: true,
     }),
+    visualizer({ open: false }),
   ],
   build: {
     lib: {
@@ -23,7 +25,7 @@ export default defineConfig({
       fileName: (format) => `my-component-library.${format}.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom", "react/jsx-runtime"],
       output: {
         globals: {
           react: "React",

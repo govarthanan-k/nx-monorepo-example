@@ -8,6 +8,7 @@ tmp
 coverage
 .nx/cache
 .nx/workspace-data
+stats.html
 
 # ───────────────────────────────
 # 📦 Dependency directories
