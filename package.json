@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start:editor": "nx run-many --targets=start,build:watch --projects=common-ui,editor --parallel",
-    "build:editor": "nx build editor"
+    "build:editor": "nx build editor",
+    "release:dryrun:rc": "nx release --specifier prerelease --preid rc --first-release --dry-run"
   },
   "workspaces": [
     "apps/*",

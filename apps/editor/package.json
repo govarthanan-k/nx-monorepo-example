@@ -1,6 +1,5 @@
 {
   "name": "@gova/editor",
-  "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -10,5 +9,11 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {},
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

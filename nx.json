@@ -34,5 +34,18 @@
         }
       }
     }
-  ]
+  ],
+  "release": {
+    "projects": ["common-ui", "editor"],
+    "projectsRelationship": "independent",
+    "releaseTagPattern": "release/{projectName}@{version}",
+    "changelog": {
+      "workspaceChangelog": false
+    },
+    "git": {
+      "commit": true,
+      "commitMessage": "chore(release): {projectName} v{version}",
+      "tag": true
+    }
+  }
 }
