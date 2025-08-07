@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start:editor": "nx run-many --targets=start,build:watch --projects=editor,common-ui --parallel"
+    "start:editor": "nx run-many --targets=start,build:watch --projects=editor,common-ui --parallel",
+    "build:editor": "nx build editor"
   },
   "private": true,
   "dependencies": {},
