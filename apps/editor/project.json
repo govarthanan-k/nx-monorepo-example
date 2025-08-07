@@ -1,5 +1,5 @@
 {
-  "name": "@gova/editor",
+  "name": "editor",
   "targets": {
     "build": {
       "executor": "nx:run-commands",
@@ -8,7 +8,7 @@
         "cwd": "apps/editor"
       }
     },
-    "serve": {
+    "start": {
       "executor": "nx:run-commands",
       "options": {
         "command": "vite",

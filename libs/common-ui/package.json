@@ -19,8 +19,7 @@
     "build:watch": "vite build --watch",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "hello": "echo hello from common ui"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.1.1",

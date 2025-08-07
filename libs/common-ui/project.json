@@ -7,6 +7,13 @@
         "command": "vite build",
         "cwd": "libs/common-ui"
       }
+    },
+    "build:watch": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite build --watch",
+        "cwd": "libs/common-ui"
+      }
     }
   },
   "tags": []

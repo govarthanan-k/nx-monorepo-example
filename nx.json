@@ -5,7 +5,7 @@
     "default": {
       "runner": "@nx/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "serve", "dev"]
+        "cacheableOperations": ["build", "test", "lint", "format"]
       }
     }
   },

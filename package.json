@@ -1,8 +1,10 @@
 {
   "name": "@gova/source",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start:editor": "nx run-many --targets=start,build:watch --projects=editor,common-ui --parallel"
+  },
   "private": true,
   "dependencies": {},
   "devDependencies": {
