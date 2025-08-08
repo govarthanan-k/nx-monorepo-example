@@ -18,7 +18,11 @@
     "build:watch": "vite build --watch",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test:storybook": "test-storybook",
+    "test:storybook:ci": "test-storybook --ci",
+    "test:storybook:watch": "test-storybook --watch",
+    "test:storybook:coverage": "test-storybook --coverage"
   },
   "dependencies": {},
   "devDependencies": {

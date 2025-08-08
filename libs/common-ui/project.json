@@ -23,6 +23,46 @@
       "options": {
         "config": "libs/common-ui/playwright.config.ts"
       }
+    },
+    "storybook": {
+      "executor": "@nx/storybook:storybook",
+      "options": {
+        "port": 6006,
+        "configDir": "libs/common-ui/.storybook"
+      }
+    },
+    "build-storybook": {
+      "executor": "@nx/storybook:build",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "configDir": "libs/common-ui/.storybook",
+        "outputDir": "dist/storybook/common-ui"
+      }
+    },
+    "test:storybook": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "test-storybook --url=http://localhost:6006 --jest-config=test-runner-jest.config.js",
+        "cwd": "libs/common-ui"
+      }
+    },
+    "test:storybook:ci": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "test-storybook --url=http://localhost:6006 --ci --jest-config=test-runner-jest.config.js",
+        "cwd": "libs/common-ui"
+      }
+    },
+    "test:all": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "nx storybook common-ui",
+          "wait-on http://localhost:6006",
+          "nx test:storybook common-ui"
+        ],
+        "parallel": false
+      }
     }
   },
   "tags": []

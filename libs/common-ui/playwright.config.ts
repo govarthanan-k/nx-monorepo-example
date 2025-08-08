@@ -4,7 +4,7 @@ export default defineConfig({
   testDir: "./tests",
   outputDir: "./test-results",
   use: {
-    baseURL: "http://localhost:65390",
+    baseURL: "http://localhost:6006",
     screenshot: "on",
     video: "off",
     trace: "on",
@@ -13,8 +13,8 @@ export default defineConfig({
 
   // Optional: Start web server before tests
   webServer: {
-    command: "nx storybook common-ui --port=65390",
-    port: 65390,
+    command: "nx storybook common-ui --port=6006",
+    port: 6006,
     reuseExistingServer: !process.env.CI,
   },
 });
