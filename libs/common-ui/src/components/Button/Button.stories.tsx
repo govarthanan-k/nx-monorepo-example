@@ -34,6 +34,9 @@ export const Secondary: Story = {
     text: "Click me",
     variant: "red",
   },
+  parameters: {
+    snapshot: { enabled: true, visual: true },
+  },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     const button = canvas.getByRole("button", { name: /click me/i });

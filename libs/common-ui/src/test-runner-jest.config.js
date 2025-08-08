@@ -5,7 +5,7 @@ module.exports = getJestConfig({
   testTimeout: 15000,
 
   // Reduce complexity - remove custom setup for now
-  // setupFilesAfterEnv: ['<rootDir>/test-runner-setup.js'],
+  setupFilesAfterEnv: ["test-runner-setup.js"],
 
   // Simple reporters
   reporters: ["default"],

@@ -19,7 +19,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test:storybook": "test-storybook",
+    "test:storybook": "test-storybook -u",
     "test:storybook:ci": "test-storybook --ci",
     "test:storybook:watch": "test-storybook --watch",
     "test:storybook:coverage": "test-storybook --coverage"
@@ -28,6 +28,9 @@
   "devDependencies": {
     "vite-plugin-dts": "4.5.4"
   },
+  "setupFilesAfterEnv": [
+    "src/test-runner-setup.js"
+  ],
   "files": [
     "dist"
   ],

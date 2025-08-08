@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/Button InteractiveTest play-test: Components/Button-Interactive Test.html 1`] = `
+<button style="background: blue;">
+  Interactive Test
+</button>
+`;
+
+exports[`Components/Button Primary play-test: Components/Button-Primary.html 1`] = `
+<button style="background: blue;">
+  Click me
+</button>
+`;
+
+exports[`Components/Button Secondary play-test: Components/Button-Secondary.html 1`] = `
+<button style="background: red;">
+  Click me
+</button>
+`;

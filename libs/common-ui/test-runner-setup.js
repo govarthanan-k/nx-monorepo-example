@@ -1,8 +1,16 @@
 // Global setup for test runner
 import "jest-playwright-preset";
 
+import { configureToMatchImageSnapshot } from "jest-image-snapshot";
+
+const toMatchImageSnapshot = configureToMatchImageSnapshot({
+  customSnapshotsDir: "__tests__/__image_snapshots__",
+  customDiffDir: "__tests__/__image_snapshots__/__diff_output__",
+});
+
 // Extend Jest matchers
 expect.extend({
+  toMatchImageSnapshot,
   toBeStorybook(received) {
     const pass = received && typeof received === "object";
     return {
