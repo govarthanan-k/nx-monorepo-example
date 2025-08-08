@@ -8,7 +8,8 @@
     "build:editor": "nx build editor",
     "release:dryrun:rc": "nx release --specifier prerelease --preid rc --first-release --dry-run",
     "build:affected": "nx affected --target=build --with-deps --base=HEAD~1 --head=HEAD --dry-run",
-    "start:storybook": "nx run common-ui:storybook"
+    "start:storybook": "nx run common-ui:storybook",
+    "e2e": "nx run common-ui:e2e"
   },
   "workspaces": [
     "apps/*",
@@ -24,9 +25,11 @@
   },
   "devDependencies": {
     "@eslint/js": "9.32.0",
+    "@nx/playwright": "^21.3.11",
     "@nx/storybook": "^21.3.11",
     "@nx/web": "21.3.11",
     "@nx/workspace": "21.3.11",
+    "@playwright/test": "^1.54.2",
     "@storybook/react-vite": "^9.0.5",
     "@swc-node/register": "1.9.1",
     "@swc/core": "1.5.7",

@@ -16,6 +16,13 @@
         "cwd": "libs/common-ui",
         "forwardAllArgs": false
       }
+    },
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "outputs": ["{options.output}"],
+      "options": {
+        "config": "libs/common-ui/playwright.config.ts"
+      }
     }
   },
   "tags": []
