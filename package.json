@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "@nx/js": "21.3.11",
+    "@storybook/test": "^8.6.14",
     "@types/node": "^24.2.0",
     "react": "19.1.1",
     "react-dom": "19.1.1",
